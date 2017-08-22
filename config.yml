@@ -1,0 +1,10 @@
+Version: v1
+data:
+  data.properties: |
+    color.good=purple
+    color.bad=yellow
+    allow.textmode=true
+    how.nice.to.look=fairlyNice
+kind: ConfigMap
+metadata:
+  name: game-fed-config
