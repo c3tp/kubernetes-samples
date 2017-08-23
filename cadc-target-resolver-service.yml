@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cadc-target-resolver-service
+  namespace: cadc
+  labels:
+    app: target-resolver
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    protocol: TCP
+  selector:
+    k8s-app: target-resolver
